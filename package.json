@@ -1,0 +1,26 @@
+{
+  "name": "hw3-expressapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rene777reyes/HW3-ExpressApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rene777reyes/HW3-ExpressApp/issues"
+  },
+  "homepage": "https://github.com/rene777reyes/HW3-ExpressApp#readme",
+  "dependencies": {
+    "animals": "^0.0.3",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2"
+  }
+}

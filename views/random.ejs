@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head.ejs") %>
+    <body>
+        <h1 class="text-center bg-dark p-2 m-0 text-white"> Wild Animals</h1>
+        <%- include("partials/nav.ejs") %>
+
+        <% if (!animal){ %>
+            <p><a href="/random_animal"> </a></p>
+        <% } else { %>
+            <h1> You're going to learn a little bit about the
+                <%= animal.name %>
+            </h1> <hr>
+
+            <div class="two-columns">
+                <div class="first-column">
+
+                    <h3> Kingdom they belong to: </h3>
+                    <%= animal.taxonomy?.kingdom || "Not available" %></p>
+
+                    <h3> Life span: </h3>
+                    <%= animal.characteristics?.lifespan || "Not available" %></p>
+
+                    <h3> Weight: </h3>
+                    <%= animal.characteristics?.weight || "Not available" %></p>
+
+                    <h3> Diet: </h3>
+                    <%= animal.characteristics?.diet || "Not available" %></p>
+
+                    <h3> Type: </h3>
+                    <%= animal.characteristics?.type || "Not available" %></p>
+
+                </div>
+
+                <div class="second-column">
+
+                    <h3> Habitat:  </h3>
+                    <%= animal.characteristics?.habitat || "Not available" %></p>
+
+                    <h3> Favorite food:  </h3>
+                    <%= animal.characteristics?.favorite_food || "Not available" %></p>
+
+                    <h3> Main prey: </h3>
+                    <%= animal.characteristics?.main_prey || "Not available" %></p>
+                    
+                    <h3> Predators:  </h3>
+                    <%= animal.characteristics?.predators || "Not available" %></p>
+
+                    <h3> Skin type: </h3>
+                    <%= animal.characteristics?.skin_type || "Not available" %></p>
+                </div>
+            </div>
+        <% } %>
+
+            <form action="/random_animal">
+                <button class="btn btn-success fw-bold"> Learn about another RANDOM animal</button>
+            </form>
+
+            <%- include("partials/footer.ejs") %>
+    </body>
+</html>

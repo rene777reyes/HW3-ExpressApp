@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head.ejs") %>
+    <body>
+        <h1 class="text-center bg-dark p-2 m-0 text-white"> Wild Animals </h1>
+        <%- include("partials/nav.ejs") %>
+        <h1 id="welcome"> 
+            You're going to learn a little bit about your favorite wild animals
+        </h1>
+
+        <form action="/search">
+            <label>Enter an wild animal name: <input type="text" name="keyword"></label>
+            <button class="btn btn-success fw-bold"> GO! </button>
+            <img src="img/geese.png" width="200">
+        </form>
+        <h2 id="or"> OR </h2>
+        <br>
+        <form action="/random_animal">
+            <button class="btn btn-success fw-bold"> Learn about a RANDOM animal</button>
+        </form>
+
+        <div id="animalPic" >
+            <img src="img/animals.png" width="300">
+        </div>
+        <%- include("partials/footer.ejs") %>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head.ejs") %>
+    <body>
+        <%- include("partials/nav.ejs") %>
+
+        <% if (!keyword){ %>
+            <h3 id="unavailable"> Sorry, info for that isn't available. Try a different one!</h3>
+        <% } else { %>
+            <h1> You're going to learn a little bit about the
+                <%= keyword.name %>
+            </h1> <hr>
+
+            <div class="two-columns">
+                <div class="first-column">
+
+                    <h3> Kingdom they belong to: </h3>
+                    <%= keyword.taxonomy?.kingdom || "Not available" %></p>
+
+                    <h3> Life span: </h3>
+                    <%= keyword.characteristics?.lifespan || "Not available" %></p>
+
+                    <h3> Weight: </h3>
+                    <%= keyword.characteristics?.weight || "Not available" %></p>
+
+                    <h3> Diet: </h3>
+                    <%= keyword.characteristics?.diet || "Not available" %></p>
+
+                    <h3> Type: </h3>
+                    <%= keyword.characteristics?.type || "Not available" %></p>
+
+                </div>
+
+                <div class="second-column">
+
+                    <h3> Habitat:  </h3>
+                    <%= keyword.characteristics?.habitat || "Not available" %></p>
+
+                    <h3> Favorite food:  </h3>
+                    <%= keyword.characteristics?.favorite_food || "Not available" %></p>
+
+                    <h3> Main prey: </h3>
+                    <%= keyword.characteristics?.main_prey || "Not available" %></p>
+                    
+                    <h3> Predators:  </h3>
+                    <%= keyword.characteristics?.predators || "Not available" %></p>
+
+                    <h3> Skin type: </h3>
+                    <%= keyword.characteristics?.skin_type || "Not available" %></p>
+                </div>
+            </div>
+        <% } %>
+
+        <form action="/search">
+            <label>Enter another animal name: <input type="text" name="keyword"></label>
+            <button class="btn btn-outline-success"> GO! </button>
+        </form>
+
+            
+
+
+
+
+
+        <%- include("partials/footer.ejs") %>
+    </body>
+</html>

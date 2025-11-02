@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(137, 91, 26);
+}
+
+footer {
+    text-align: center;
+    margin: 4px;
+}
+
+#or {
+    text-align: center;
+}
+
+#welcome {
+    text-align: center;
+}
+
+.two-columns {
+    display: flex;
+    gap: 10px;   
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 5px;
+
+}
+
+.first-column{
+    flex: 1;
+}
+
+.second-column {
+    flex: 1;
+}
+
+form {
+    text-align: center;
+}
+
+#unavailable {
+    text-align: center;
+}
+
+hr {
+    background-color: rgb(2, 110, 2);
+    height: 5px;
+    
+}
+
+#animalPic {
+    text-align: center;
+    margin: auto;
+}
