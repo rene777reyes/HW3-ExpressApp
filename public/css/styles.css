@@ -7,8 +7,14 @@ footer {
     margin: 4px;
 }
 
+#enter {
+    font-size: 20px;
+}
+
 #or {
     text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
 }
 
 #welcome {

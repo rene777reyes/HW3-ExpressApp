@@ -40,6 +40,11 @@ app.get('/random_animal', async (req, res) => {
     res.render('random.ejs', {animal: data[0]});
 });
 
+app.get('/random_animal', async (req, res) => {
+    let animalList = animals.words;
+    res.render('random.ejs', {animalList});
+});
+
 
 app.listen(3000, () => {
     console.log('server started!!!');

@@ -2,6 +2,7 @@
 <html lang="en">
 <%- include("partials/head.ejs") %>
     <body>
+        <h1 class="text-center bg-dark p-2 m-0 text-white"> Wild Animals</h1>
         <%- include("partials/nav.ejs") %>
 
         <% if (!keyword){ %>
@@ -52,8 +53,8 @@
         <% } %>
 
         <form action="/search">
-            <label>Enter another animal name: <input type="text" name="keyword"></label>
-            <button class="btn btn-outline-success"> GO! </button>
+            <label>Enter another wild animal name: <input type="text" name="keyword"></label>
+            <button class="btn btn-success"> GO! </button>
         </form>
 
             

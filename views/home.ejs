@@ -9,7 +9,7 @@
         </h1>
 
         <form action="/search">
-            <label>Enter an wild animal name: <input type="text" name="keyword"></label>
+            <label id="enter">Enter an wild animal name: <input type="text" name="keyword"></label>
             <button class="btn btn-success fw-bold"> GO! </button>
             <img src="img/geese.png" width="200">
         </form>
@@ -22,6 +22,9 @@
         <div id="animalPic" >
             <img src="img/animals.png" width="300">
         </div>
+        <form action="/list">
+            <button class="btn btn-success fw-bold"> See the plethora of animals</button>
+        </form>
         <%- include("partials/footer.ejs") %>
     </body>
 </html>
